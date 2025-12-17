@@ -1,6 +1,6 @@
 name: scandit_flutter_datacapture_price_label
 description: This plugin nables Price Label Verification capabilities.
-version: 8.0.0
+version: 8.1.0
 homepage: https://scandit.com
 
 environment:
