@@ -31,9 +31,9 @@ dependencies {
     if (findProject(":native:libs:sdc:label-plv-models:sdc-label-plv-models-android") != null) {
         api(project(path: ":native:libs:sdc:label-plv-models:sdc-label-plv-models-android"))
     } else {
-        def sdk_version = "8.4.0"
+        def sdk_version = "8.1.5"
 
-        println("Version of the native sdk used in this build: ${safeExtGet('native_sdk_version', sdk_version)}")
-        api "com.scandit.datacapture:price-label:${safeExtGet('native_sdk_version', sdk_version)}"
+        println("Version of the native sdk used in this build: ${safeExtGet('global_sdk_version', sdk_version)}")
+        api "com.scandit.datacapture:price-label:${safeExtGet('global_sdk_version', sdk_version)}"
     }
 }
