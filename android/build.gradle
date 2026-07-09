@@ -13,11 +13,11 @@ android {
         }
         namespace "com.scandit.datacapture.flutter.price_label"
     }
-    compileSdkVersion safeExtGet("compileSdkVersion", 33)
+    compileSdkVersion safeExtGet("compileSdkVersion", 36)
 
     defaultConfig {
         minSdkVersion safeExtGet("minSdkVersion", 24)
-        targetSdkVersion safeExtGet("targetSdkVersion", 33)
+        targetSdkVersion safeExtGet("targetSdkVersion", 36)
         versionCode 1
         versionName "1.0"
     }
@@ -31,7 +31,7 @@ dependencies {
     if (findProject(":native:libs:sdc:label-plv-models:sdc-label-plv-models-android") != null) {
         api(project(path: ":native:libs:sdc:label-plv-models:sdc-label-plv-models-android"))
     } else {
-        def sdk_version = "8.4.1"
+        def sdk_version = "8.5.0"
 
         println("Version of the native sdk used in this build: ${safeExtGet('native_sdk_version', sdk_version)}")
         api "com.scandit.datacapture:price-label:${safeExtGet('native_sdk_version', sdk_version)}"
