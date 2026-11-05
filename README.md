@@ -1,3 +1,40 @@
-ScanditPriceLabel is a library that enables Price Label Verification capabilities.
+# scandit_flutter_datacapture_price_label
 
-Learn more with the [official documentation](https://docs.scandit.com/) or get started with [our samples](https://github.com/Scandit/datacapture-flutter-samples)
+An add-on for Label Capture that adds price label verification.
+
+## Requirements
+
+- Flutter 3.22.0 or later
+- Android minSdk 24 or later
+- Android Gradle Plugin 8.1.4, Kotlin 1.8.22 and Gradle 8.2 or later, with Java 17
+- iOS 15.0 or later
+
+## Installation
+
+```sh
+flutter pub add scandit_flutter_datacapture_price_label
+```
+
+This package needs `scandit_flutter_datacapture_label` in the same app. Add it the same way.
+
+## Documentation
+
+See the [Scandit Flutter documentation](https://docs.scandit.com/sdks/flutter/).
+
+## Samples
+
+Get started with the [Scandit Flutter samples](https://github.com/Scandit/datacapture-flutter-samples).
+
+## Using a coding agent
+
+Install the Scandit skills to help your coding agent build with this package:
+
+```sh
+npx plugins add scandit/skills
+```
+
+This detects the coding agents you have and installs into each. To install from your agent's own marketplace instead (Claude Code, Cursor, Codex, Copilot CLI), see the [Scandit skills installation guide](https://github.com/Scandit/skills#installation).
+
+Skills for this package:
+
+- `label-capture-flutter`

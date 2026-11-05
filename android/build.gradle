@@ -17,12 +17,16 @@ android {
 
     defaultConfig {
         minSdkVersion safeExtGet("minSdkVersion", 24)
-        targetSdkVersion safeExtGet("targetSdkVersion", 36)
         versionCode 1
         versionName "1.0"
     }
 
-    lintOptions {
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    lint {
         abortOnError false
     }
 }
@@ -31,7 +35,7 @@ dependencies {
     if (findProject(":native:libs:sdc:label-plv-models:sdc-label-plv-models-android") != null) {
         api(project(path: ":native:libs:sdc:label-plv-models:sdc-label-plv-models-android"))
     } else {
-        def sdk_version = "8.5.5"
+        def sdk_version = "8.7.0"
 
         println("Version of the native sdk used in this build: ${safeExtGet('native_sdk_version', sdk_version)}")
         api "com.scandit.datacapture:price-label:${safeExtGet('native_sdk_version', sdk_version)}"
