@@ -1,0 +1,17 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - test/**.dart
+    - build/**
+    - android/**
+    - ios/**
+
+linter:
+  rules:
+    lines_longer_than_80_chars: false # https://dart-lang.github.io/linter/lints/lines_longer_than_80_chars.html
+    directives_ordering: false # https://dart-lang.github.io/linter/lints/directives_ordering.html
+    one_member_abstracts: false # https://dart-lang.github.io/linter/lints/one_member_abstracts.html
+    public_member_api_docs: false # https://dart-lang.github.io/linter/lints/public_member_api_docs.html
+    avoid_setters_without_getters: false # https://dart-lang.github.io/linter/lints/avoid_setters_without_getters.html
+    avoid_positional_boolean_parameters: false # https://dart-lang.github.io/linter/lints/avoid_positional_boolean_parameters.html
